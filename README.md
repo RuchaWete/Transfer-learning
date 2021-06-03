@@ -41,15 +41,15 @@ colab_utils for mannually annotating the images<br>
 ##10.the num_classes is override as we need to detect just the one class(rubber duck)and its value is set to one.<br>
 ##the checkpoint is saved inside the model garden.<br>
 ##11.the checkpoint is saved inside the model garden.<br>
-##the pipeline configuartion file is stoted in  the 'pc' variable and is then loaded using cofigs var into the 'model_config' to build a detection model.
-##12.then only the box regresssion head is restored but not the classification head./
-##a model named 'new_model' is created which has the feature extraction layers of the ssd resnet model which is trained on coco architechture. but since we need it to detect only /
-the rubber duck class, we create a model which has only the feature extraction layers in backend and the box regresssion head. the classification layer is initialised and then it learns the weights and parameters using the training set of rubber ducks given as np array./
-13.now to train the the model on our data set, the weights of the model are restored.the model is run through a dummy image first to create the variables./
-14. fine tuning of the model on the rubber duck images. is done by choosing some parameters and fine tuning them/.
-since we are providing the input of just 5 images we set the batch_size to 4(0 to 4)./
-a learning rate of 0.01 is chosen./
-the variables in the top layer of resnet model are chosen and then stored in the array 'fine_tune_array'./
+##the pipeline configuartion file is stoted in  the 'pc' variable and is then loaded using cofigs var into the 'model_config' to build a detection model.<br>
+##12.then only the box regresssion head is restored but not the classification head.<br>
+##a model named 'new_model' is created which has the feature extraction layers of the ssd resnet model which is trained on coco architechture. but since we need it to detect only<br>
+the rubber duck class, we create a model which has only the feature extraction layers in backend and the box regresssion head. the classification layer is initialised and then it learns the weights and parameters using the training set of rubber ducks given as np array.<br>
+13.now to train the the model on our data set, the weights of the model are restored.the model is run through a dummy image first to create the variables.<br>
+14. fine tuning of the model on the rubber duck images. is done by choosing some parameters and fine tuning them.<br>
+since we are providing the input of just 5 images we set the batch_size to 4(0 to 4).<br>
+a learning rate of 0.01 is chosen.<br>
+the variables in the top layer of resnet model are chosen and then stored in the array 'fine_tune_array'.<br>
 "model_training" function is defined for the forward and backward propoagation in a single training example. inside it we define another function 'training_step'. this takes as arguements the 
 
   
