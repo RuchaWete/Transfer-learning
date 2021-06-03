@@ -17,8 +17,8 @@ utility modules(os,io,pathlib) of python are imported to change the path and dir
 the tensorflow model garden cloned from git and  the object detection API which provides the required framework is installed/
 the following utility functions are imported :/
 numpy  library for creating and handling multi-dimensional arrays of image data/
-##modules from IPython.display to display images in Jupyter notebook.
-##colab_utils for mannually annotating the images 
+modules from IPython.display to display images in Jupyter notebook./
+colab_utils for mannually annotating the images 
 ##visualization_utils for visualising the detections
 ##object detection utilities 
 ##5.function 'image_into_numpy' is defined to load images from file into a numpy array.
@@ -50,7 +50,7 @@ numpy  library for creating and handling multi-dimensional arrays of image data/
 ##since we are providing the input of just 5 images we set the batch_size to 4(0 to 4).
 ##a learning rate of 0.01 is chosen.
 ##the variables in the top layer of resnet model are chosen and then stored in the array 'fine_tune_array'.
-##"model_training" function is defined for the forward and backward propoagation in a single training example. inside it we define another function 'training_step'. this takes as arguements the 
+/"model_training" function is defined for the forward and backward propoagation in a single training example. inside it we define another function 'training_step'. this takes as arguements the 
 
   
 
