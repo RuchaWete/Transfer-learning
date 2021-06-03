@@ -14,9 +14,9 @@ Run the object detection algorithm on a new image to identify the rubber duck.
 
 utility modules(os,io,pathlib) of python are imported to change the path and directories of files.
 
-the tensorflow model garden cloned from git and  the object detection API which provides the required framework is installed
-##.the following utility functions are imported :
-##numpy  library for creating and handling multi-dimensional arrays of image data
+the tensorflow model garden cloned from git and  the object detection API which provides the required framework is installed/
+the following utility functions are imported :/
+numpy  library for creating and handling multi-dimensional arrays of image data/
 ##modules from IPython.display to display images in Jupyter notebook.
 ##colab_utils for mannually annotating the images 
 ##visualization_utils for visualising the detections
