@@ -18,10 +18,10 @@ the tensorflow model garden cloned from git and  the object detection API which 
 the following utility functions are imported :/
 numpy  library for creating and handling multi-dimensional arrays of image data/
 modules from IPython.display to display images in Jupyter notebook./
-colab_utils for mannually annotating the images 
-##visualization_utils for visualising the detections
-##object detection utilities 
-##5.function 'image_into_numpy' is defined to load images from file into a numpy array.
+colab_utils for mannually annotating the images/
+##visualization_utils for visualising the detections/
+##object detection utilities/ 
+##5.function 'image_into_numpy' is defined to load images from file into a numpy array./
 ##the image data is Obtained using the path in arguement and returned into a uint8 numpy array with shape(height, width, channels(RGB).
 ##plot_detections function is Defined which has the arguements: the numpy arrays image_np, boxes, classes,   scores
 ##a wrapper function is Defined  to visualize detections ie. bounding boxes and coorresponding text which takes the numpy array having the labels of the boxes annotated and saved  to numpy array 'annotations_np'.
