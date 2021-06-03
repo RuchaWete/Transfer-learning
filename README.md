@@ -10,17 +10,15 @@ Run the object detection algorithm on a new image to identify the rubber duck.
 
 ##Workflow
 
-.tensorflow gpu model is installed and imported
-
-utility modules(os,io,pathlib) of python are imported to change the path and directories of files.
-
-the tensorflow model garden cloned from git and  the object detection API which provides the required framework is installed<br>
-the following utility functions are imported :<br>
-numpy  library for creating and handling multi-dimensional arrays of image data<br>
-modules from IPython.display to display images in Jupyter notebook.<br>
-colab_utils for mannually annotating the images<br>
-visualization_utils for visualising the detections<br>
-object detection utilities<br>
+1.tensorflow gpu model is installed and imported<br>
+2.utility modules(os,io,pathlib) of python are imported to change the path and directories of files.<br>
+  the tensorflow model garden cloned from git and  the object detection API which provides the required framework is installed<br>
+3.the following utility functions are imported :<br>
+  numpy  library for creating and handling multi-dimensional arrays of image data<br>
+  modules from IPython.display to display images in Jupyter notebook.<br>
+  colab_utils for mannually annotating the images<br>
+  visualization_utils for visualising the detections<br>
+  object detection utilities<br>
 5.function 'image_into_numpy' is defined to load images from file into a numpy array.<br>
 the image data is Obtained using the path in arguement and returned into a uint8 numpy array with shape(height, width, channels(RGB).<br>
 plot_detections function is Defined which has the arguements: the numpy arrays image_np, boxes, classes,   scores<br>
