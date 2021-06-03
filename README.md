@@ -42,15 +42,15 @@ colab_utils for mannually annotating the images
 ##the checkpoint is saved inside the model garden.
 ##11.the checkpoint is saved inside the model garden.
 ##the pipeline configuartion file is stoted in  the 'pc' variable and is then loaded using cofigs var into the 'model_config' to build a detection model.
-##12.then only the box regresssion head is restored but not the classification head.
-##a model named 'new_model' is created which has the feature extraction layers of the ssd resnet model which is trained on coco architechture. but since we need it to detect only 
-##the rubber duck class, we create a model which has only the feature extraction layers in backend and the box regresssion head. the classification layer is initialised and then ##it learns the weights and parameters using the training set of rubber ducks given as np array.
-##13.now to train the the model on our data set, the weights of the model are restored.the model is run through a dummy image first to create the variables.
-##14. fine tuning of the model on the rubber duck images. is done by choosing some parameters and fine tuning them.
-##since we are providing the input of just 5 images we set the batch_size to 4(0 to 4).
-##a learning rate of 0.01 is chosen.
-##the variables in the top layer of resnet model are chosen and then stored in the array 'fine_tune_array'.
-/"model_training" function is defined for the forward and backward propoagation in a single training example. inside it we define another function 'training_step'. this takes as arguements the 
+##12.then only the box regresssion head is restored but not the classification head./
+##a model named 'new_model' is created which has the feature extraction layers of the ssd resnet model which is trained on coco architechture. but since we need it to detect only /
+the rubber duck class, we create a model which has only the feature extraction layers in backend and the box regresssion head. the classification layer is initialised and then it learns the weights and parameters using the training set of rubber ducks given as np array./
+13.now to train the the model on our data set, the weights of the model are restored.the model is run through a dummy image first to create the variables./
+14. fine tuning of the model on the rubber duck images. is done by choosing some parameters and fine tuning them/.
+since we are providing the input of just 5 images we set the batch_size to 4(0 to 4)./
+a learning rate of 0.01 is chosen./
+the variables in the top layer of resnet model are chosen and then stored in the array 'fine_tune_array'./
+"model_training" function is defined for the forward and backward propoagation in a single training example. inside it we define another function 'training_step'. this takes as arguements the 
 
   
 
